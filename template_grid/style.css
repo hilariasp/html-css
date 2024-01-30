@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+.box{
+    height: 700px;
+    display: grid;
+    grid-template-areas: "me nav md"
+    "me cont md"
+    "me rodape md";
+    grid-template-columns: 300px 1fr 200px;
+    grid-template-rows: 100px 1fr 90px;
+}
+.nav{
+    grid-area: nav;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "mus escola obj";
+    grid-template-columns: 33% 33% 33%;
+    font-size: 20px;
+}
+.mus{
+    grid-area: mus;
+    background-color: cornsilk;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.escola{
+    grid-area: escola;
+    background-color: rgb(255, 234, 151);
+    text-align: center;
+    padding-top: 35px;
+}
+.obj{
+    grid-area: obj;
+    text-align: center;
+    padding-top: 35px;
+}
+.cont{
+    grid-area: cont;
+    background-color: cornsilk;
+    background-color: cornsilk;
+    display: flex;
+}
+.md{
+    grid-area: md;
+    background-color: rgb(255, 234, 151);
+    border: 1px solid black;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.f1{
+    height: 510px;
+    width: 33.3%;
+    background-color: rgb(190, 255, 255);
+}
+.f2{
+    height: 510px;
+    width: 33.3%;
+    background-color: rgb(159, 242, 214);
+}
+.f3{
+    height: 510px;
+    width: 33.3%;
+    background-color: aquamarine;
+}
+.p1{
+    height: 33%;
+    background-color: rgb(190, 255, 255);
+}
+.p2{
+    height: 33%;
+    background-color: rgb(159, 242, 214);
+}
+.p3{
+    height: 33%;
+    background-color: aquamarine;
+}
+.me{
+    grid-area: me;
+    background-color: rgb(255, 234, 151);
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "logo" "box1" "box2";
+    grid-template-rows: 100px 100px 200px;
+}
+.logo{
+    grid-area: logo;
+    background-color: cornsilk;
+    text-align: center;
+}
+.logo img{
+width: 100%;
+height: 100%;
+}
+
+.box1{
+    grid-area: box1;
+    background-color: cornflowerblue;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+}
+.box2{
+    grid-area: box2;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.rodape{
+    grid-area: rodape;
+    background-color: rgb(141, 181, 255);
+    border: 1px solid black;
+    display: flex;
+
+}
