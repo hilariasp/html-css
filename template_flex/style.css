@@ -1,0 +1,64 @@
+.principal{
+    height: 600px;
+    width: 80%;
+    display: grid;
+    grid-template-areas: "header header"
+     "section lateral"
+      "footer footer";
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 30% 70% 90px;
+}
+.titulo{
+    grid-area: header;
+    background-color: orange;
+}
+.secao{
+    grid-area: section;
+    background-color: rgb(0, 255, 21);
+    display: flex;
+    flex-direction: column;
+}
+.c1, .c2, .c3{
+    height: 33.33%;
+}
+.c2{
+    background-color: aquamarine;
+}
+.lateral{
+    grid-area: lateral;
+    background-color: rgb(0, 72, 255);
+}
+.footer{
+    grid-area: footer;
+    background-color: aqua;
+    display: flex;
+}
+.p1, .p3{
+    width: 33.33%;
+}
+.p2{
+    width: 55%;
+    background-color: blueviolet;
+}
+@media(max-width: 992px){
+    .principal{
+        display: grid;
+        grid-template-areas: "header" "section" "lateral" "footer";
+        grid-template-columns: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .p1, .p2, .p3{
+        margin: 0;
+        border: solid 1px #fff;
+        width: 49%;
+        height: 50px;
+    }
+    .p2{
+        width: 100%;
+        order: -1;
+    }
+}
