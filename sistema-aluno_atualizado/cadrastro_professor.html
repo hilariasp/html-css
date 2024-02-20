@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            height: 750px;
+        }
+        article{
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img01.png" alt="img">
+        <nav>
+            <a href="aluno.html" style="color: rgb(225, 244, 233);">Aluno</a>
+            <a href="index.html" style="color: rgb(225, 244, 233);">Página Inicial</a>
+            <a href="professor.html" style="color: rgb(225, 244, 233);">Professor</a>
+        </nav>
+        <img src="img01.png" alt="img">
+    </header>
+    <article>
+        <h2>Cadrastro de Professor</h2><br>
+        <div class="dados_pessoais">
+            <form>
+                <h3>Dados Pessoais</h3>
+                <br>
+                <label for="nome">Nome e sobrenome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required><br><br>
+                <label for="cidade">Cidade</label>
+                <select id="cidade" name="cidade"> <br>
+                    <option value="selecione">Selecione</option>
+                    <option value="guanambi">Guanambi</option>
+                    <option value="licinio">Lícinio de Almeida</option>
+                    <option value="cacule">Caculé</option>
+                </select>                
+                <label for="estado">Estado</label>
+                <select id="estado" name="estado">
+                    <option value="selecione">Selecione</option>
+                        <option value="ba">BA</option>
+                        <option value="mg">MG</option>
+                        <option value="sp">SP</option>
+                </select> <br><br>
+                <label for="endereco">Endereço</label><br>
+                <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" required><br><br>
+            </form>
+        </div>
+        <div class="dados_profissionais">
+            <form>
+                <h3>Dados Profissionais</h3>
+                <br>
+                <label for="local">Local de Trabalho</label><br>
+                <input type="text" name="local" id="nome" placeholder="Digite seu local de trabalho" required><br><br>
+            </form>
+        </div>
+        <br>
+        <button type="submit">Concluído</button>
+        
+    </article>
+    <footer>
+        ©2024 HILÁRIA. DIREITOS RESERVADOS.
+    </footer>
+    </div>
+</body>
+
+</html>
